@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2013 for Windows Desktop
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZaupTextCommands", "ZaupTextCommands\ZaupTextCommands.csproj", "{9BE9C80D-76C7-4FFB-AB68-02B50C66B0DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZaupTextCommands", "ZaupTextCommands.csproj", "{9BE9C80D-76C7-4FFB-AB68-02B50C66B0DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
