@@ -7,7 +7,7 @@ using Rocket.API;
 using Rocket.Unturned;
 using Rocket.Unturned.Logging;
 using Rocket.Unturned.Plugins;
-using SDG;
+using SDG.Unturned;
 using Steamworks;
 
 namespace ZaupTextCommands
