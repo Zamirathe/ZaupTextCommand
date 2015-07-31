@@ -7,7 +7,8 @@ namespace ZaupTextCommands
     public class ZaupTextCommandConfiguration : IRocketPluginConfiguration
     {
         public List<ZaupTextCommand> commands;
-        public ZaupTextCommandConfiguration()
+
+        public void LoadDefaults()
         {
             commands = new List<ZaupTextCommand>()
             {
