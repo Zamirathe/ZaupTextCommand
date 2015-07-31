@@ -6,24 +6,23 @@ namespace ZaupTextCommands
 {
     public class ZaupTextCommandConfiguration : IRocketPluginConfiguration
     {
-        public List<ZaupTextCommand> commands;
+        public List<TextCommand> commands;
 
         public void LoadDefaults()
         {
-            commands = new List<ZaupTextCommand>()
+            commands = new List<TextCommand>()
             {
-                new ZaupTextCommand
-                (
-                    "rules", 
-                    "Displays the server rules", 
-                    new List<string>() {
+                new TextCommand{
+                    Name = "rules", 
+                    Help = "Displays the server rules", 
+                    Text = new List<string>() {
                         "No harrasment",
                         "No cursing", 
                         "No griefing",
                         "Any of the above will get you banned.",
                         "The above is just a sample of what you could use this for."
                     }
-                )
+                }
             };
         }
     }
