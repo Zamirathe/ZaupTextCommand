@@ -69,6 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TextCommand.cs" />
     <Compile Include="ZaupTextCommandConfiguration.cs" />
     <Compile Include="ZaupTextCommands.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
