@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 using Rocket.API;
 using Rocket.Core;
@@ -22,9 +21,9 @@ namespace ZaupTextCommands
         {
             if (this.Configuration.Instance.commands.Count > 0 && this.Configuration != null && this.Configuration.Instance.commands != null)
             {
-                foreach (ZaupTextCommand command in this.Configuration.Instance.commands)
+                foreach (TextCommand command in this.Configuration.Instance.commands)
                 {
-                    Commander.register(command);
+                    Commander.register(new ZaupTextCommand(command.Name, command.Help, command.Text));
                 }
             }
         }
@@ -32,7 +31,10 @@ namespace ZaupTextCommands
         {
             if (this.Configuration.Instance.commands.Count > 0 && this.Configuration != null && this.Configuration.Instance.commands != null)
             {
-                foreach (ZaupTextCommand command in this.Configuration.Instance.commands)
+                foreach (Command command in (
+                    from c in Commander.Commands
+                    where c is ZaupTextCommand
+                    select c).ToList<Command>())
                 {
                     Commander.deregister(command);
                 }
