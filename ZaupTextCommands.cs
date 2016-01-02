@@ -46,9 +46,9 @@ namespace ZaupTextCommands
         private List<string> text;
         public ZaupTextCommand(string cName, string cHelp, List<string> text)
 		{
-			this.commandName = cName;
-			this.commandHelp = cHelp;
-			this.commandInfo = this.commandName + " - " + this.commandHelp;
+			this._command = cName;
+			this._help = cHelp;
+			this._info = this._command + " - " + this._help;
 			this.text = text;
 		}
         public ZaupTextCommand()
